@@ -3,8 +3,11 @@ name: Hello World
 tasks: 
   - name: Transcode
     type: ffmpeg
-    options: 
-      - "-y"
-      - "-i"
-      - "/home/arik/Downloads/trailer_1080p.mov"
-      - "/home/arik/Downloads/trailer_1080p.mp4"
+    options: [
+              -y,
+              -i, 
+              /home/arik/Downloads/trailer_1080p.mov, 
+              -vf, 
+              "scale=320:240",
+              /home/arik/Downloads/trailer_1080p.mp4
+             ]
