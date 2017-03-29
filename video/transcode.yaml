@@ -1,7 +1,7 @@
 id: demo/transcode
 name: Hello World
 tasks: 
-  - name: Print a greeting
+  - name: Transcode
     type: ffmpeg
     options: 
       - "-y"
