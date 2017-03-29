@@ -1,5 +1,4 @@
-id: demo/hello
-name: Hello World v5
+description: Hello World v5
 input:
   - id: name
     label: Your Name
