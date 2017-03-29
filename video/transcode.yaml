@@ -8,6 +8,6 @@ tasks:
               -i, 
               /home/arik/Downloads/trailer_1080p.mov, 
               -vf, 
-              "scale=320:240",
+              "scale=320:-2",
               /home/arik/Downloads/trailer_1080p.mp4
              ]
