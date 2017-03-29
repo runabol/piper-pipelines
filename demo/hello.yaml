@@ -1,4 +1,4 @@
-description: Hello World v5
+name: Hello World v5
 input:
   - id: name
     label: Your Name
