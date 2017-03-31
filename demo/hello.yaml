@@ -14,7 +14,7 @@ tasks:
       
   - type: each
     list: [1, 2, 3]
-    iterator: 
+    iteratee: 
       type: print
       text: ${item}
  
