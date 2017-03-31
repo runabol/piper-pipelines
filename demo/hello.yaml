@@ -4,6 +4,7 @@ input:
   - name: name
     label: Your Name
     type: string
+    required: true
     
 tasks:
   - name: randomNumber
