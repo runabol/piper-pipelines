@@ -9,22 +9,24 @@ tasks:
   - name: randomNumber
     label: Generate a random number
     type: randomInt
-    input:
-      startInclusive: 0
-      endInclusive: 1000
+    startInclusive: 0
+    endInclusive: 1000
+      
+  - type: each
+    list: [1, 2, 3]
+    iterator: 
+      type: print
+      text: ${item}
  
   - label: Print a greeting
     type: print
-    input:
-      text: Hello world
+    text: Hello world
    
   - label: Sleep a little
     type: sleep
-    input:
-      millis: 1000
+    millis: 1000
     
   - label: Print a farewell
     type: print
-    input:
-      text: Goodbye world
+    text: Goodbye world
     

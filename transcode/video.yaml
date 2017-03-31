@@ -3,13 +3,12 @@ name: Hello World
 tasks: 
   - name: Transcode
     type: ffmpeg
-    input:
-      options: [
-        -y,
-        -i, 
-        /tmp/trailer_1080p.mov, 
-        -vf, 
-        "scale=320:-2",
-        -an,
-        /tmp/trailer_1080p.mp4
-      ]
+    options: [
+      -y,
+      -i, 
+      /tmp/trailer_1080p.mov, 
+      -vf, 
+      "scale=320:-2",
+      -an,
+      /tmp/trailer_1080p.mp4
+    ]
