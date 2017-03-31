@@ -6,7 +6,6 @@ input:
     type: string
     
 tasks:
-
   - name: randomNumber
     label: Generate a random number
     type: randomInt
