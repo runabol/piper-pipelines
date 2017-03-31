@@ -1,20 +1,27 @@
 name: Hello World
 
 input:
-  - id: name
+  - name: name
     label: Your Name
     type: string
     
-tasks: 
-  - name: Print a greeting
+tasks:
+
+  - name: randomNumber
+    label: Generate a random number
+    type: randomInt
+    startInclusive: 0
+    endInclusive: 1000
+ 
+  - label: Print a greeting
     type: print
-    text: hello world
+    text: Hello world
    
-  - name: Sleep a little
+  - label: Sleep a little
     type: sleep
     millis: 1000
     
-  - name: Print a farewell
+  - label: Print a farewell
     type: print
-    text: goodbye world
+    text: Goodbye world
     
