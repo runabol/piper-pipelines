@@ -14,7 +14,7 @@ tasks:
       
   - label: Print a greeting
     type: print
-    text: Hello world
+    text: Hello ${name}
    
   - label: Sleep a little
     type: sleep
@@ -22,5 +22,5 @@ tasks:
     
   - label: Print a farewell
     type: print
-    text: Goodbye world
+    text: Goodbye ${name}
     
