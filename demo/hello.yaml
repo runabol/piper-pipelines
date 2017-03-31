@@ -12,12 +12,6 @@ tasks:
     startInclusive: 0
     endInclusive: 1000
       
-  - type: each
-    list: [1, 2, 3]
-    iteratee: 
-      type: print
-      text: ${item}
- 
   - label: Print a greeting
     type: print
     text: Hello world
