@@ -1,14 +1,25 @@
-id: demo/transcode
 name: Hello World
+
+input:
+  - name: input
+    label: Input File
+    type: string
+    required: true
+    
+  - name: output
+    label: Input File
+    type: string
+    required: true
+
 tasks: 
   - name: Transcode
     type: ffmpeg
     options: [
       -y,
       -i, 
-      /tmp/trailer_1080p.mov, 
+      "${input}", 
       -vf, 
       "scale=320:-2",
       -an,
-      /tmp/trailer_1080p.mp4
+      "${output}"
     ]
