@@ -19,7 +19,7 @@ tasks:
    
   - label: Sleep a little
     type: sleep
-    millis: 1000
+    millis: ${randomNumber}
     
   - label: Print a farewell
     type: print
