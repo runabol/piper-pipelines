@@ -20,6 +20,5 @@ tasks:
       "${input}", 
       -vf, 
       "scale=320:-2",
-      -an,
       "${output}"
     ]
