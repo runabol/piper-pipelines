@@ -1,7 +1,7 @@
 name: Hello Demo
 
 input:
-  - name: name
+  - name: yourName
     label: Your Name
     type: string
     required: true
@@ -15,7 +15,7 @@ tasks:
       
   - label: Print a greeting
     type: print
-    text: Hello ${name}
+    text: Hello ${yourName}
    
   - label: Sleep a little
     type: sleep
@@ -23,5 +23,5 @@ tasks:
     
   - label: Print a farewell
     type: print
-    text: Goodbye ${name}
+    text: Goodbye ${yourName}
     
