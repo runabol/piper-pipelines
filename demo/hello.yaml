@@ -11,7 +11,7 @@ tasks:
     label: Generate a random number
     type: randomInt
     startInclusive: 0
-    endInclusive: 100
+    endInclusive: 5000
       
   - label: Print a greeting
     type: print
