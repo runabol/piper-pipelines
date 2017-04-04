@@ -25,3 +25,7 @@ tasks:
     type: print
     text: Goodbye ${yourName}
     
+  - label: a list of items
+    type: print
+    text: ["${yourName}","${randomNumber}"]
+    
