@@ -10,6 +10,7 @@ tasks:
   - name: randomNumber
     label: Generate a random number
     type: randomInt
+    node: random
     startInclusive: 0
     endInclusive: 5000
       
