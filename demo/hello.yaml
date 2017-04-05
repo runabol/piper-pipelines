@@ -1,6 +1,6 @@
 name: Hello Demo
 
-input:
+inputs:
   - name: yourName
     label: Your Name
     type: string

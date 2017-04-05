@@ -1,6 +1,6 @@
 name: Hello Transcode 
 
-input:
+inputs:
   - name: input
     label: Input File
     type: string
