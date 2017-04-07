@@ -1,0 +1,15 @@
+name: Rogue Demo
+    
+tasks:      
+  - label: Print a greeting
+    type: print
+    text: Hello rogue
+    
+  - label: Rogue task
+    type: rogue
+    probability: 0.5
+    
+  - label: Print a farewell
+    type: print
+    text: Goodbye rogue
+    

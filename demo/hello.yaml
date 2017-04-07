@@ -16,11 +16,7 @@ tasks:
   - label: Print a greeting
     type: print
     text: Hello ${yourName}
-    
-  - label: Rogue task
-    type: rogue
-    probability: 0.8
-   
+       
   - label: Sleep a little
     type: sleep
     millis: ${randomNumber}
