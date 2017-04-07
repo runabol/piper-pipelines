@@ -1,0 +1,17 @@
+name: Hello Fast
+
+inputs:
+  - name: yourName
+    label: Your Name
+    type: string
+    required: true
+    
+tasks:      
+  - label: Print a greeting
+    type: print
+    text: Hello ${yourName}
+       
+  - label: Print a farewell
+    type: print
+    text: Goodbye ${yourName}
+    
