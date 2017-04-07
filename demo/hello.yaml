@@ -16,6 +16,9 @@ tasks:
   - label: Print a greeting
     type: print
     text: Hello ${yourName}
+    
+  - label: Rogue task
+    type: rogue
    
   - label: Sleep a little
     type: sleep
