@@ -19,6 +19,7 @@ tasks:
     
   - label: Rogue task
     type: rogue
+    probability: 0.8
    
   - label: Sleep a little
     type: sleep
