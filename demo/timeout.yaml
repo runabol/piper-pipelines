@@ -1,4 +1,4 @@
-name: Hello Slow
+name: Hello Timeout
 
 inputs:
   - name: yourName
@@ -13,6 +13,7 @@ tasks:
     
   - label: Sleep a lot
     type: sleep
+    timeout: 5s
     millis: 60000
        
   - label: Print a farewell
