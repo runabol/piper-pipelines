@@ -7,7 +7,7 @@ tasks:
     
   - label: Rogue task
     type: rogue
-    retry: 1
+    retry: 3
     probability: 0.5
     
   - label: Print a farewell
