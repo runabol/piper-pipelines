@@ -6,8 +6,7 @@ tasks:
     script: |
           for f in /tmp
           do
-          echo "Processing $f"
-            # do something on $f
+            echo "Processing $f"
           done
           
     
