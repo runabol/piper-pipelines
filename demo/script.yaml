@@ -5,7 +5,7 @@ tasks:
     name: myoutput
     type: bash
     script: |
-          for f in /tmp
+          for f in /tmp/*.*
           do
             echo "Processing $f"
           done
