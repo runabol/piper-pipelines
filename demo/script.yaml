@@ -2,6 +2,7 @@ name: Hello Script
     
 tasks:      
   - label: List files in tmp
+    name: myoutput
     type: bash
     script: |
           for f in /tmp
