@@ -7,7 +7,7 @@ tasks:
     script: |
           for f in /tmp/*.*
           do
-            echo "Processing $f"
+            echo "$f"
           done
           
     
