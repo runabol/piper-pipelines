@@ -1,17 +1,18 @@
 name: Hello Script
     
 inputs:
-  - name: path
-    label: Path to list
+  - name: pathPattern
+    label: Path pattern to list
+    default: "/tmp/*.*"
     type: string
     required: true
     
 tasks:      
-  - label: List files in ${path}
+  - label: List files in ${pathPattern}
     name: myoutput
     type: bash
     script: |
-          for f in ${path}
+          for f in ${pathPattern}
           do
             echo "$f"
           done
