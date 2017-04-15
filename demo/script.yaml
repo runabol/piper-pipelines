@@ -1,11 +1,17 @@
 name: Hello Script
     
+inputs:
+  - name: path
+    label: Path to list
+    type: string
+    required: true
+    
 tasks:      
-  - label: List files in tmp
+  - label: List files in ${path}
     name: myoutput
     type: bash
     script: |
-          for f in /tmp/*.*
+          for f in ${path}
           do
             echo "$f"
           done
