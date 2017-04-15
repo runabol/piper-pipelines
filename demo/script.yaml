@@ -1,0 +1,13 @@
+name: Hello Script
+    
+tasks:      
+  - label: List files in tmp
+    type: bash
+    script: |
+          for f in /tmp
+          do
+          echo "Processing $f"
+            # do something on $f
+          done
+          
+    
