@@ -15,3 +15,9 @@ tasks:
     type: print
     text: Goodbye ${yourName}
     
+  - type: each
+    list: [1, 2, 3]
+    iteratee: 
+      type: print
+      text: ${item}
+    
