@@ -16,8 +16,8 @@ tasks:
     text: Goodbye ${yourName}
     
   - type: each
-    list: [1, 2, 3]
+    list: [1, 2, 3, 4, 5]
     iteratee: 
-      type: print
-      text: ${item}
+      type: sleep
+      text: ${item}*1000
     
