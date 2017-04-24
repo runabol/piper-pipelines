@@ -19,5 +19,5 @@ tasks:
     list: [1, 2, 3, 4, 5]
     iteratee: 
       type: sleep
-      text: ${item}*1000
+      millis: ${item*1000}
     
