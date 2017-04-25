@@ -16,7 +16,7 @@ tasks:
     text: Goodbye ${yourName}
     
   - type: each
-    list: "range(1,5)"
+    list: "${range(1,5)}"
     iteratee: 
       type: sleep
       millis: "${item*1000}"
