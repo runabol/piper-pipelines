@@ -5,7 +5,7 @@ tasks:
     list: "${range(1,100)}"
     iteratee:
       type: each
-      list: "${range,10}"
+      list: "${range(1,10)}"
       iteratee: 
         type: print
         text: ${item}
