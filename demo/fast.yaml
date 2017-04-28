@@ -1,7 +1,7 @@
 name: Hello Fast
 
 inputs:
-  - name: yourName
+  - name: someName
     label: Your Name
     type: string
     required: true
