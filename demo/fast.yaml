@@ -6,6 +6,11 @@ inputs:
     type: string
     required: true
     
+ - name: age
+   label: Your Age
+   type: int
+   required: true
+    
 tasks:      
   - label: Print a greeting
     type: print
