@@ -9,10 +9,10 @@ inputs:
 tasks:      
   - label: Print a greeting
     type: print
-    text: "Hello ${yourName}"
+    text: Hello ${yourName}
        
   - label: Print a farewell
     type: print
-    text: "Goodbye ${yourName}"
+    text: Goodbye ${yourName}
     
     
