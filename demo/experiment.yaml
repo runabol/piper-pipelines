@@ -2,7 +2,7 @@ name: Hello Experiment
     
 tasks:          
   - type: each
-    list: "${range(1,1000)}"
+    list: "${range(1,100)}"
     iteratee: 
       type: print
       text: ${item}
