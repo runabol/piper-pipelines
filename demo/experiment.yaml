@@ -2,11 +2,11 @@ name: Hello Experiment
     
 tasks:          
   - type: each
-    list: "${range(1,100)}"
+    list: "${range(1,3)}"
     itemVar: item1
     iteratee:
       type: each
-      list: "${range(1,10)}"
+      list: "${range(1,3)}"
       itemVar: item2
       iteratee: 
         type: print
