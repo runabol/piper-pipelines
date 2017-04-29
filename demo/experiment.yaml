@@ -14,5 +14,5 @@ tasks:
         itemVar: item3
         iteratee:   
           type: print
-          text: ${item1}-${item2}-${item3}
+          text: ${item1}-${item2}-${item2}
     
