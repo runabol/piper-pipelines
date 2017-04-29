@@ -9,5 +9,6 @@ tasks:
       list: "${range(1,2)}"
       itemVar: item2
       iteratee:
+          retry: 2
           type: rogue
     
