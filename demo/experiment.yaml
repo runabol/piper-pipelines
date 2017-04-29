@@ -11,4 +11,5 @@ tasks:
       iteratee:
           retry: 2
           type: rogue
+          label: ${item1}-${item2} 
     
