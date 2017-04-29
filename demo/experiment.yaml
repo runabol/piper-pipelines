@@ -11,6 +11,7 @@ tasks:
       iteratee:
         type: each
         list: "${range(1,3)}"
+        itemVar: item2
         iteratee:   
           type: print
           text: ${item1}-${item2}-${item3}
