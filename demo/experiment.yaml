@@ -9,6 +9,5 @@ tasks:
       list: "${range(1,2)}"
       itemVar: item2
       iteratee:
-          type: print
-          text: ${item1}-${item2}
+          type: rogue
     
