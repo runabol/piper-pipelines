@@ -10,6 +10,6 @@ tasks:
       itemVar: item2
       iteratee:
           retry: 2
-          type: rogue
+          type: print
           label: ${item1}-${item2} 
     
