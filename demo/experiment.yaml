@@ -9,7 +9,6 @@ tasks:
       list: "${range(1,2)}"
       itemVar: item2
       iteratee:
-          type: rogue
-          retry: 2
+          type: print
           label: ${item1}-${item2} 
     
