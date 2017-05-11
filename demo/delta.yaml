@@ -1,0 +1,6 @@
+name: Delta Demo
+    
+tasks:
+  - label: Say hi in Delta
+    type: delta
+    handler: SayHiTask
