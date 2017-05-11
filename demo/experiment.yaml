@@ -1,9 +1,17 @@
 name: Hello Experiment
     
 tasks:          
-  - type: each
-    list: "${range(1,125)}"
-    iteratee:
-       type: sleep
-       millis: 1000 
+  - type: fork
+    branches: 
+       - - type: print
+           text: Hi prong a
+           
+         - type: print
+           text: Bye prong a
+           
+       - - type: print
+           text: Hi prong B
+           
+         - type: print
+           text: Bye prong B
     
