@@ -1,6 +1,13 @@
 name: Delta Demo
-    
+   
+inputs:
+  - name: yourName
+    label: Your Name
+    type: string
+    required: true
+
 tasks:
   - label: Say hi in Delta
     type: delta
     handler: SayHiTask
+    name: ${yourName}
