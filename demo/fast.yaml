@@ -5,6 +5,10 @@ inputs:
     label: Your Name
     type: string
     required: true
+  - name: myName
+    label: My Name
+    type: string
+    required: true
   
 tasks:      
   - label: Print a greeting
