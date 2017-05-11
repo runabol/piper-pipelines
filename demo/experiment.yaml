@@ -10,5 +10,5 @@ tasks:
       itemVar: item2
       iteratee:
           type: print
-          label: ${item1}-${item2} 
+          text: ${item1}-${item2} 
     
