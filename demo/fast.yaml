@@ -17,6 +17,6 @@ tasks:
        
   - label: Print a farewell
     type: print
-    text: Goodbye ${yourName}
+    text: Goodbye ${myName}
     
     
