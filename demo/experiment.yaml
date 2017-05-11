@@ -20,4 +20,10 @@ tasks:
            
          - type: sleep
            millis: ${randomNumber}
+           
+         - type: each
+           list: [1000, 2000, 3000]
+           iteratee: 
+             type: sleep
+             millis: ${item}
     
