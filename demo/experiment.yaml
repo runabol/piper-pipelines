@@ -22,5 +22,5 @@ tasks:
            millis: ${randomNumber}
            
          - type: rogue
-           retry: 2
+           retry: 1
     
