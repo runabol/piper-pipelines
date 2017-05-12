@@ -9,4 +9,10 @@ tasks:
         
       - type: print
         text: hello
+        
+      - type: each
+        list: [1000,2000,3000]
+        iteratee: 
+          type: sleep
+          millis: ${item}
     
