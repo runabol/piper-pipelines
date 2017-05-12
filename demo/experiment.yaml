@@ -4,5 +4,5 @@ tasks:
 
   - name: strNumber
     type: var
-    value: "1234"
+    value: "${int('1234')}"
     
