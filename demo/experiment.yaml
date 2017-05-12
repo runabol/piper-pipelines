@@ -2,7 +2,11 @@ name: Hello experiment
     
 tasks:          
 
-  - type: var
-    value: "1234"
-    output: ${int(output)}
+  - type: parallel
+    tasks: 
+      - type: sleep
+        millis: 10000
+        
+      - type: print
+        text: hello
     
