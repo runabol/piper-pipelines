@@ -5,7 +5,7 @@ tasks:
   - type: parallel
     tasks: 
       - type: sleep
-        millis: 20000
+        millis: 10000
         
       - type: print
         text: hello
