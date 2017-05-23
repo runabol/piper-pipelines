@@ -12,6 +12,14 @@ inputs:
     required: true
 
 tasks: 
+
+  - name: height
+    type: ffprobe
+
+  - name: targetHeight
+    type: switch
+    expression: ${input}
+
   - name: Transcode
     type: ffmpeg
     options: [
