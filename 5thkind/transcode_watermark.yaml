@@ -44,7 +44,7 @@ tasks:
       -y,
       -i, "${input}",
       -i, "${watermark}",
-      "-filter_complex","[0:v]scale=-2:${targetHeight}[bg];[1]lut=a=val*0.3[a];[bg][1:v]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2",
+      "-filter_complex","[0:v]scale=-2:${targetHeight}[1];[1]lut=a=val*0.3[bg];[bg][1:v]overlay=(main_w-overlay_w)/2:(main_h-overlay_h)/2",
       "-pix_fmt","yuv420p",
       "-codec:v","libx264",
       "-preset","fast",
