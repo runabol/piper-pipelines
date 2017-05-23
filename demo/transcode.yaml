@@ -19,7 +19,7 @@ tasks:
       -i, 
       "${input}", 
       -vf, 
-      -an,
       "scale=320:-2",
+      -an,
       "${output}"
     ]
