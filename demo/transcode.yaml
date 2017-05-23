@@ -17,8 +17,9 @@ tasks:
     options: [
       -y,
       -i, "${input}",
+      "-pix_fmt","yuv420p",
       "-codec:v","libx264",
-      "-preset","superfast",
+      "-preset","fast",
       "-b:v","500k",
       "-maxrate","500k",
       "-bufsize","1000k", 
