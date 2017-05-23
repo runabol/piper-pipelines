@@ -1,4 +1,4 @@
-name: Hello Transcode 
+name: Transcode 
 
 inputs:
   - name: input
