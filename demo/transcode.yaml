@@ -35,7 +35,7 @@ tasks:
 
   - name: Transcode
     type: ffmpeg
-    options: 
+    options: [
       -y,
       -i, "${input}",
       "-pix_fmt","yuv420p",
@@ -49,4 +49,4 @@ tasks:
       "-codec:a","libfdk_aac",
       "-b:a","128k",
       "${output}"
-    
+    ]
