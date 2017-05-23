@@ -18,7 +18,6 @@ tasks:
       -y,
       -i, "${input}",
       "-codec:v","libx264",
-      "-profile:v","high",
       "-preset","slow",
       "-b:v","500k",
       "-maxrate","500k",
