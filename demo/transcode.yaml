@@ -16,6 +16,7 @@ tasks:
   - name: height
     type: ffprobe
     input: ${input}
+    output: ${output.video[0].height}
 
   - name: targetHeight
     type: switch
