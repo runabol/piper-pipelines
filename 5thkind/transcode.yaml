@@ -33,7 +33,7 @@ tasks:
         value: 720
     default: ${height} 
 
-  - name: Transcode
+  - label: Transcode
     type: ffmpeg
     options: [
       -y,
