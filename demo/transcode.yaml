@@ -10,6 +10,11 @@ inputs:
     label: Input File
     type: string
     required: true
+    
+  - name: profile
+    label: Profile
+    type: string
+    required: true
 
 tasks: 
 
@@ -20,11 +25,17 @@ tasks:
 
   - name: targetHeight
     type: switch
-    expression: ${input}
+    expression: true
+    cases:
+      - key: ${profile=='low' AND height>480}
+        value: 480
+      - key: ${profile=='high' AND height>1080}
+        value: 1080
+    default: ${height} 
 
   - name: Transcode
     type: ffmpeg
-    options: [
+    options: 
       -y,
       -i, "${input}",
       "-pix_fmt","yuv420p",
@@ -38,4 +49,4 @@ tasks:
       "-codec:a","libfdk_aac",
       "-b:a","128k",
       "${output}"
-    ]
+    
