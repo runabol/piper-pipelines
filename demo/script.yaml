@@ -1,4 +1,4 @@
-name: Hello Script
+label: Hello Script
     
 inputs:
   - name: path

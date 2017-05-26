@@ -1,4 +1,4 @@
-name: Hello for-each
+label: Hello for-each
     
 tasks:          
   - type: each

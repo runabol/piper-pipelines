@@ -1,4 +1,4 @@
-name: Transcode 
+label: Transcode 
 
 inputs:
   - name: input

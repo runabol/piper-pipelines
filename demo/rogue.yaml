@@ -1,4 +1,4 @@
-name: Rogue Demo
+label: Rogue Demo
     
 tasks:      
   - label: Print a greeting

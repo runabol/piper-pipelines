@@ -1,4 +1,4 @@
-name: Hello fork/join
+label: Hello fork/join
     
 tasks:          
   - type: fork

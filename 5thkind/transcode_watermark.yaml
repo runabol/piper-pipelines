@@ -1,4 +1,4 @@
-name: Transcode and watermark
+label: Transcode and watermark
 
 inputs:
   - name: input

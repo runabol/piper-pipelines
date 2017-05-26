@@ -1,4 +1,4 @@
-name: Hello Fast
+label: Hello Fast
 
 inputs:
   - name: yourName

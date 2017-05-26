@@ -1,4 +1,4 @@
-name: Hello Demo
+label: Hello Demo
 
 inputs:
   - name: yourName

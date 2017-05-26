@@ -1,4 +1,4 @@
-name: Delta Demo
+label: Delta Demo
    
 inputs:
   - name: yourName
