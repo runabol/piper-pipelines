@@ -34,8 +34,8 @@ tasks:
     cases:
       - key: ${profile=='low' AND height>480}
         value: 480
-      - key: ${profile=='high' AND height>720}
-        value: 720
+      - key: ${profile=='high' AND height>1080}
+        value: 1080
     default: ${height} 
 
   - label: Transcode
