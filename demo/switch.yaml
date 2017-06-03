@@ -1,21 +1,21 @@
 label: Hello Switch
-
-inputs:
-  - name: selector
-    type: string
-    required: true
     
 tasks:          
 
+  - name: selector
+    type: randomInt
+    startInclusive: 1
+    endInclusive: 3
+
   - type: switch
-    expression: ${selector}
+    expression: c${selector}
     cases:
-      - key: hello
+      - key: c1
         tasks: 
           - name: output
             type: var
             value: hello
-      - key: bye
+      - key: c2
         tasks: 
           - name: output
             type: var
