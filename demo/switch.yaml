@@ -26,5 +26,5 @@ tasks:
              value: other
             
   - type: print
-    label: ${output}
-    text: ${selector}-${output}  
+    label: ${selector}-${output}
+    text: ${output}  
