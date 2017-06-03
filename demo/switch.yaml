@@ -27,4 +27,4 @@ tasks:
             
   - type: print
     label: ${output}
-    text: ${output}  
+    text: ${selector}-${output}  
