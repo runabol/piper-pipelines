@@ -24,6 +24,9 @@ tasks:
           -  name: output
              type: var
              value: other
+             
+  - type: sleep 
+    millis: ${selector*1000}
             
   - type: print
     label: ${selector}-${output}
