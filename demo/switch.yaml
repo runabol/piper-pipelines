@@ -5,7 +5,7 @@ tasks:
   - name: selector
     type: randomInt
     startInclusive: 1
-    endInclusive: 3
+    endInclusive: 4
 
   - type: switch
     expression: c${selector}
