@@ -1,0 +1,30 @@
+label: Hello Switch
+
+inputs:
+  - name: selector
+    type: string
+    required: true
+    
+tasks:          
+
+  - type: switch
+    expression: ${selector}
+    cases:
+      - key: hello
+        tasks: 
+          - name: output
+            type: var
+            value: hello
+      - key: bye
+        tasks: 
+          - name: output
+            type: var
+            value: bye
+    default: 
+          -  name: output
+             type: var
+             value: other
+            
+  - type: print
+    label: ${output}
+    text: ${output}  
