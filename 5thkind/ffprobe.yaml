@@ -1,0 +1,13 @@
+label: ffprobe 
+
+inputs:
+  - name: input
+    label: Input File
+    type: string
+    required: true
+
+tasks: 
+
+  - name: ffprobe
+    type: ffprobe
+    input: ${input}
