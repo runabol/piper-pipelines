@@ -46,8 +46,6 @@ tasks:
       "-maxrate","500k",
       "-bufsize","1000k", 
       "-vf","scale=-2:${targetHeight}",
-      "-threads","0",
-      "-codec:a","libfdk_aac",
       "-b:a","128k",
       "${output}"
     ]
