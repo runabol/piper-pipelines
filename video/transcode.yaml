@@ -31,7 +31,8 @@ tasks:
         value: 480
       - key: ${profile=='hd' AND height>1080}
         value: 1080
-    default: ${height} 
+    default: 
+      - value: ${height} 
 
   - label: Transcode
     type: ffmpeg
