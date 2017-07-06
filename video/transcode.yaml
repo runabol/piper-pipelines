@@ -27,9 +27,9 @@ tasks:
     type: switch
     expression: true
     cases:
-      - key: ${profile=='low' AND height>480}
+      - key: ${profile=='sd' AND height>480}
         value: 480
-      - key: ${profile=='high' AND height>1080}
+      - key: ${profile=='hd' AND height>1080}
         value: 1080
     default: ${height} 
 
