@@ -1,0 +1,57 @@
+label: Split and Stitch Demo
+
+inputs:
+  - name: input
+    label: Input File
+    type: string
+    required: true
+    
+  - name: output
+    label: Output File
+    type: string
+    required: true
+    
+tasks:          
+
+  - name: input
+    type: var
+    value: ${input}
+
+  - name: chunks
+    type: vsplit
+    input: ${input} 
+    chunkSize: 10s
+    
+  - name: chunks
+    type: map
+    list: ${chunks}
+    iteratee:
+      type: var
+      value: 
+        start: ${item.start}
+        end: ${item.end}
+        output: /tmp/chunk_${itemIndex}.mp4
+        
+  - type: each
+    list: ${chunks}
+    iteratee: 
+      type: ffmpeg
+      options: [
+        "-y",
+        "-ss", "${item.start}",
+        "-i", "${input}",
+        "-to","${item.end}",
+        "${item.output}"
+      ]
+  
+  - name: chunkPaths
+    type: map
+    list: ${chunks}
+    iteratee: 
+      type: var
+      value: ${item.output}
+     
+  - type: vstitch
+    chunks: ${chunkPaths}
+    output: ${output}
+    
