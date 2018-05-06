@@ -16,6 +16,10 @@ tasks:
   - name: input
     type: var
     value: ${input}
+    
+  - name: outputDir
+    type: filePath
+    filename: ${output}
 
   - name: chunks
     type: vsplit
@@ -30,7 +34,7 @@ tasks:
       value: 
         start: ${item.start}
         end: ${item.end}
-        output: ${systemProperty('java.io.tmpdir')}/chunk_${itemIndex}.mp4
+        output: ${outputDir}/chunk_${itemIndex}.mp4
         
   - type: each
     list: ${chunks}
