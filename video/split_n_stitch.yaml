@@ -30,7 +30,7 @@ tasks:
       value: 
         start: ${item.start}
         end: ${item.end}
-        output: /tmp/chunk_${itemIndex}.mp4
+        output: ${java.io.tmpdir}/chunk_${itemIndex}.mp4
         
   - type: each
     list: ${chunks}
