@@ -15,7 +15,6 @@ tasks:
   - label: Generate HLS Stream
     type: ffmpeg
     options: [
-      ffmpeg 
       -y, 
       -i, "${input}",
       -vf,"scale=w=1280:h=720:force_original_aspect_ratio=decrease",
