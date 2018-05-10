@@ -25,7 +25,7 @@ tasks:
       "-profile:v",main,
       -crf,20,
       -g,48,
-      -keyint_min,48 
+      -keyint_min,48,
       -sc_threshold,0, 
       "-b:v",2500k,
       -maxrate,2675k,
