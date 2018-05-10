@@ -1,4 +1,4 @@
-label: HLS
+label: HLS (Single Bitrate)
 
 inputs:
   - name: input
