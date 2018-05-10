@@ -39,6 +39,29 @@ tasks:
         -hls_playlist_type,vod,
         -hls_segment_filename,"${output}/360p_%03d.ts","${output}/360.m3u8"
       ]
+
+    - label: Generate 480p HLS stream
+      type: ffmpeg
+      options: [
+        -y, 
+        -i, "${input}",
+        -vf,"scale=w=-2:h=480",
+        "-c:a", aac,
+        "-ar","48000",
+        "-b:a","128k", 
+        "-c:v","h264",
+        "-profile:v",main,
+        -crf,20,
+        -g,48,
+        -keyint_min,48,
+        -sc_threshold,0, 
+        "-b:v",1400k,
+        -maxrate,1498k,
+        -bufsize,2100k,
+        -hls_time,4,
+        -hls_playlist_type,vod,
+        -hls_segment_filename,"${output}/480p_%03d.ts","${output}/480.m3u8"
+      ]
      
     - label: Generate 720p HLS stream
       type: ffmpeg
@@ -55,11 +78,34 @@ tasks:
         -g,48,
         -keyint_min,48,
         -sc_threshold,0, 
-        "-b:v",2500k,
-        -maxrate,2675k,
-        -bufsize,3750k,
+        "-b:v",2800k,
+        -maxrate,2996k,
+        -bufsize,4200k,
         -hls_time,4,
         -hls_playlist_type,vod,
         -hls_segment_filename,"${output}/720p_%03d.ts","${output}/720p.m3u8"
+      ]
+      
+    - label: Generate 1080p HLS stream
+      type: ffmpeg
+      options: [
+        -y, 
+        -i, "${input}",
+        -vf,"scale=w=-2:h=1080",
+        "-c:a", aac,
+        "-ar","48000",
+        "-b:a","192k", 
+        "-c:v","h264",
+        "-profile:v",main,
+        -crf,20,
+        -g,48,
+        -keyint_min,48,
+        -sc_threshold,0, 
+        "-b:v",5000k,
+        -maxrate,5350k,
+        -bufsize,7500k,
+        -hls_time,4,
+        -hls_playlist_type,vod,
+        -hls_segment_filename,"${output}/1080p_%03d.ts","${output}/1080p.m3u8"
       ]
     
