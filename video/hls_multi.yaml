@@ -37,7 +37,7 @@ tasks:
         -bufsize,1200k,
         -hls_time,4,
         -hls_playlist_type,vod,
-        -hls_segment_filename,"${output}/360p_%03d.ts","${output}/360.m3u8"
+        -hls_segment_filename,"${output}/360p_%03d.ts","${output}/360p.m3u8"
       ]
 
     - label: Generate 480p HLS stream
@@ -60,7 +60,7 @@ tasks:
         -bufsize,2100k,
         -hls_time,4,
         -hls_playlist_type,vod,
-        -hls_segment_filename,"${output}/480p_%03d.ts","${output}/480.m3u8"
+        -hls_segment_filename,"${output}/480p_%03d.ts","${output}/480p.m3u8"
       ]
      
     - label: Generate 720p HLS stream
