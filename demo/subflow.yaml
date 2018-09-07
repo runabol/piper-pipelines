@@ -9,6 +9,6 @@ tasks:
   - name: output
     type: subflow
     pipelineId: demo/random_int
-    output: ${execution.output}
+    output: ${execution.output.randomNumber}
     
     
