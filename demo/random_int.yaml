@@ -1,0 +1,13 @@
+label: Random Int
+
+outputs:
+  - name: randomNumber
+    value: ${randomNumber}
+
+tasks:      
+  
+  - name: randomNumber
+    label: Generate a random integer
+    type: randomInt
+    startInclusive: 0
+    endInclusive: 1000
