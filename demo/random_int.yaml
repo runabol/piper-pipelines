@@ -4,10 +4,10 @@ outputs:
   - name: randomNumber
     value: ${randomNumber}
 
-tasks:      
-  
+tasks:
+
   - name: randomNumber
     label: Generate a random integer
-    type: randomInt
+    type: random/int
     startInclusive: 0
     endInclusive: 1000

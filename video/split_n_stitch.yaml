@@ -5,41 +5,41 @@ inputs:
     label: Input File
     type: string
     required: true
-    
+
   - name: output
     label: Output File
     type: string
     required: true
-    
-tasks:          
+
+tasks:
 
   - name: input
-    type: var
+    type: core/var
     value: ${input}
-    
+
   - name: outputDir
-    type: filePath
+    type: io/filePath
     filename: ${output}
 
   - name: chunks
-    type: vsplit
-    input: ${input} 
+    type: media/vsplit
+    input: ${input}
     chunkSize: 10s
-    
+
   - name: chunks
     type: map
     list: ${chunks}
     iteratee:
-      type: var
-      value: 
+      type: core/var
+      value:
         start: ${item.start}
         end: ${item.end}
         output: ${outputDir}/chunk_${itemIndex}.mp4
-        
+
   - type: each
     list: ${chunks}
-    iteratee: 
-      type: ffmpeg
+    iteratee:
+      type: media/ffmpeg
       options: [
         "-y",
         "-ss", "${item.start}",
@@ -47,15 +47,14 @@ tasks:
         "-to","${item.end}",
         "${item.output}"
       ]
-  
+
   - name: chunkPaths
     type: map
     list: ${chunks}
-    iteratee: 
-      type: var
+    iteratee:
+      type: core/var
       value: ${item.output}
-     
-  - type: vstitch
+
+  - type: media/vstitch
     chunks: ${chunkPaths}
     output: ${output}
-    

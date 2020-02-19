@@ -9,14 +9,12 @@ inputs:
     label: My Name
     type: string
     required: true
-  
-tasks:      
+
+tasks:
   - label: Print a greeting
-    type: print
+    type: io/print
     text: Hello ${yourName}
-       
+
   - label: Print a farewell
-    type: print
+    type: io/print
     text: Goodbye ${myName}
-    
-    

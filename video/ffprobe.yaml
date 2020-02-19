@@ -1,4 +1,4 @@
-label: ffprobe 
+label: ffprobe
 
 inputs:
   - name: input
@@ -6,8 +6,8 @@ inputs:
     type: string
     required: true
 
-tasks: 
+tasks:
 
   - name: ffprobe
-    type: ffprobe
+    type: media/ffprobe
     input: ${input}

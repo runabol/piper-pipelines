@@ -1,20 +1,18 @@
 label: Hello Script
-    
+
 inputs:
   - name: path
     label: Path pattern to list
     default: "/tmp/*.*"
     type: string
     required: true
-    
-tasks:      
+
+tasks:
   - label: List files in ${path}
     name: listOfFiles
-    type: bash
+    type: shell/bash
     script: |
           for f in ${path}
           do
             echo "$f"
           done
-          
-    

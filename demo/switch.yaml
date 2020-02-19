@@ -1,9 +1,9 @@
 label: Hello Switch
-    
-tasks:          
+
+tasks:
 
   - name: selector
-    type: randomInt
+    type: random/int
     startInclusive: 1
     endInclusive: 4
 
@@ -11,23 +11,23 @@ tasks:
     expression: c${selector}
     cases:
       - key: c1
-        tasks: 
+        tasks:
           - name: output
-            type: var
+            type: core/var
             value: hello
       - key: c2
-        tasks: 
+        tasks:
           - name: output
-            type: var
+            type: core/var
             value: bye
-    default: 
+    default:
           -  name: output
-             type: var
+             type: core/var
              value: other
-             
-  - type: sleep 
+
+  - type: time/sleep
     millis: ${selector*1000}
-            
-  - type: print
+
+  - type: io/print
     label: ${selector}-${output}
-    text: ${output}  
+    text: ${output}

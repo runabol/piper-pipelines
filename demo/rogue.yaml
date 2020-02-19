@@ -1,16 +1,15 @@
 label: Rogue Demo
-    
-tasks:      
+
+tasks:
   - label: Print a greeting
     type: print
     text: Hello rogue
-    
+
   - label: Rogue task
-    type: rogue
+    type: random/rogue
     retry: 1
     probability: 0.75
-    
+
   - label: Print a farewell
-    type: print
+    type: io/print
     text: Goodbye rogue
-    

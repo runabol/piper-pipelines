@@ -1,25 +1,25 @@
-label: Transcode 
+label: Transcode
 
 inputs:
   - name: input
     label: Input File
     type: string
     required: true
-    
+
   - name: output
     label: Input File
     type: string
     required: true
-    
+
   - name: profile
     label: Profile
     type: string
     required: true
 
-tasks: 
+tasks:
 
   - name: height
-    type: ffprobe
+    type: media/ffprobe
     input: ${input}
     output: ${execution.output.video[0].height}
 
@@ -31,11 +31,11 @@ tasks:
         value: 480
       - key: ${profile=='hd' AND height>1080}
         value: 1080
-    default: 
-      value: ${height} 
+    default:
+      value: ${height}
 
   - label: Transcode
-    type: ffmpeg
+    type: media/ffmpeg
     options: [
       -y,
       -i, "${input}",
@@ -44,7 +44,7 @@ tasks:
       "-preset","fast",
       "-b:v","500k",
       "-maxrate","500k",
-      "-bufsize","1000k", 
+      "-bufsize","1000k",
       "-vf","scale=-2:${targetHeight}",
       "-b:a","128k",
       "${output}"
