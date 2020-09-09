@@ -23,11 +23,14 @@ inputs:
 
 tasks:
 
-  - name: height
+  - name: ffprobe
     type: media/ffprobe
     input: ${input}
-    output: ${execution.output.video[0].height}
 
+  - name: height
+    type: core/var
+    value: ${ffprobe.video[0].height}
+    
   - name: targetHeight
     type: switch
     expression: true
