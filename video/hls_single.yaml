@@ -17,7 +17,7 @@ tasks:
     options: [
       -y,
       -i, "${input}",
-      -vf,"scale=w=1280:h=720:force_original_aspect_ratio=decrease",
+      -vf,"scale=w=-2:h=720:force_original_aspect_ratio=decrease",
       "-c:a", aac,
       "-ar","48000",
       "-b:a","128k",
