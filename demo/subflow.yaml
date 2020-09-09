@@ -6,9 +6,12 @@ outputs:
     
 tasks:      
 
-  - name: output
+  - name: subflowOutput
     type: subflow
     pipelineId: demo/random_int
-    output: ${execution.output.randomNumber}
+
+  - name: output
+    type: core/var
+    value: ${subflowOutput.randomNumber}
     
     

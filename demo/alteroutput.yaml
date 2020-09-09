@@ -2,6 +2,10 @@ label: Alter output
 
 tasks:
 
-  - type: core/var
+  - name: stringNumber
+    type: core/var
     value: "1234"
-    output: ${int(output)}
+
+  - name: intNumber
+    type: core/var
+    value: ${int(stringNumber)}
